@@ -1,0 +1,125 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(197, 153, 72);
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    
+    min-height: 900px;
+    
+}
+
+.document{
+    width: 1000px;
+    margin-right: 300px;
+    margin-left: 300px;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header ul{
+    max-width: 950px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+header li{
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.alt {
+    background-color: rgb(17, 43, 54);
+}
+
+.base{
+    background-color: black;
+}
+
+.title h1{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 350px;
+    
+}
+
+.textblock h2{
+    font-size: 30px;
+    color: brown;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 14px;
+}
+
+.state a{
+    color: yellowgreen;
+}
+
+.textblock p{
+    margin-bottom: 15px;
+}
+
+.textblock{
+    width: 600px;
+}
+
+.state{
+    display: flex;
+}
+
+.side{
+    justify-content: center;
+    width: 375px;
+}
+
+.block{
+    background-color: rgb(227, 227, 227);
+    margin-top: 50px;
+    padding-top: 5px;
+}
+
+.block li{
+    border-bottom: 1px solid rgb(172, 171, 171);
+}
+
+.block h3{
+    padding: 10px;
+    background-color: rgb(85, 85, 248);
+    margin:0px 5px 5px 5px;
+    color: white;
+    text-align: left;
+}
+
+.block li, p{
+    margin-left: 5px;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: rgb(172, 250, 127);
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 1000px;
+    
+}
+
+footer a{
+    color: yellowgreen;
+}
