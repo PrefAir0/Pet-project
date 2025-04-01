@@ -1,0 +1,666 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* подключаем шрифты */
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+/*шапка сайта*/
+
+
+.header{
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    vertical-align: bottom;
+}
+
+.menu{
+    margin-left: 244px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu-item{
+    margin-right: 115px;
+}
+
+.menu-item a{
+    color: #030305;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    border-bottom: 2px solid #030305;
+}
+
+/* СТИЛИ БУРГЕРА */
+.burger{
+    display: none;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+}
+
+.burger span{
+    width: 80%;
+    height: 2px;
+    transform: scale(1);
+    background-color: rgb(0, 0, 0);
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: all 0.3s ease 0s;
+    background-color: black;
+}
+
+.burger::before{
+    top: 0;
+   
+}
+
+.burger::after{
+    bottom: 0;
+}
+
+.burger.active span{
+    transform: scale(0);
+}
+
+.burger.active::before{
+    top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+}
+
+/*первый экран*/
+.main{
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 104px 0  154px 0px;
+}
+
+.main-info{
+    max-width: 855px;
+}
+
+.main-title{
+font-weight: bold;
+font-size: 80px;
+line-height: 110%;
+color: #030305;
+margin-bottom: 40px;
+}
+
+.main-text{
+    max-width: 502px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #030305;
+    margin-bottom: 40px;
+}
+
+button{
+    width: 334px;
+    height: 64px;
+    background: #030305;
+    padding: 20px;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: white;  
+    transition: background-color .5s; 
+}
+
+button:hover{
+    background: #575757;
+    cursor: pointer;
+}
+
+/*второй экран*/
+
+.car{
+    padding: 100px 0;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: bold;
+    color: #030305;
+    line-height: 70px;
+}
+
+.car-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-item{
+    max-width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car-item-title{
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    color: #030305;
+    text-align: center;
+    padding: 15px 0 17px 0;
+}
+
+.car-item-action{
+    margin-top: 13px;
+}
+
+.car-item-action .button{
+    padding: 15px;
+    height: 54px;
+    width: 100%;
+}
+
+.car-item-img:hover img{
+    transform: scale(1.1);
+}
+
+.car-item-img img{
+    vertical-align: bottom;
+    transition: all .2s
+}
+
+/*третий экран*/
+
+.price{
+    overflow: hidden;
+}
+
+.price .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price .sub-title{
+    margin-bottom: 20px;
+}
+
+.price-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 60px;
+}
+
+.price-form{
+    max-width: 344px;
+}
+
+.price-input{
+    padding: 22px 18px ;
+    width: 344px;
+    margin-bottom: 15px;
+    background: white;
+    border: 1px solid #5D5D5F;
+    font-size: 15px;
+    color: #000000;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.price-input::placeholder{
+    color: #5D5D5F;
+}
+
+.price .button{
+    width: 100%;
+}
+
+.price-img{
+    position: absolute;
+    bottom: 0px;
+    left: 401px;
+}
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+
+.footer .container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.rights{
+    font-size: 15px;
+    color: #030305;
+}
+
+.characteristics{
+    display: flex;
+    width: 384px;
+    justify-content: space-around;
+}
+
+/* медиазапросы */
+
+@media (max-width: 360px) {
+    /*общий контейнер*/
+    .container {
+        padding: 0 20px;/*увеличить отступы для безопасности*/
+    }
+
+    /* шапка */
+
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+
+    /*главный заголовок и текст*/
+    .main {
+        background-image: none; /*скрываем фон*/
+        padding: 50px 0 50px 0; /*уменьшаем отступы между блоками*/
+    }
+
+    .main-title{
+        font-size: 28px; /*уменьшить до 28px*/
+        margin-bottom: 20px;
+    }
+
+    .main-text {
+        max-width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+
+    /* бургер */
+    
+
+    .button{
+        width: 100%; /* кнопка во всю ширину*/
+        height: 50px;
+        font-size: 14px;
+    }
+
+    /* карточки автомобилей*/
+
+    .car {
+        padding: 50px 0; /*уменьшаем отступы между блоками*/
+    }
+    
+    .car-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;/*рсасстояние между карточками*/
+    }
+
+    .car-item {
+        max-width: 100%;/* карточка во всю ширину*/
+    }
+
+    .car-item-image img {
+        width: 100%;/* изоброжение адоптивно*/
+        height: auto;
+    }
+
+    .car-item-title {
+        font-size: 18px;
+
+        
+    }
+    .car-item-action .button {
+        width: 100%;
+    }
+
+    /* форма бронирования*/
+
+    .sub-title {
+        font-size: 28px; /*уменьшить до 28px*/
+        line-height: 1;
+    }
+
+    .price-form{
+        max-width: 100%;
+    }
+
+    .price-input {
+        width: 100%;
+    }
+
+    .price-image {
+        display: none; /*скрываем изображение на мобильной версии*/
+    }
+
+    /* подвал */
+    .footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:576px ) {
+/*общий контейнер*/
+.container {
+    padding: 0 50px;/*увеличить отступы для безопасности*/
+}
+
+/* шапка */
+
+.header .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.open{
+    display: flex !important;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #9c9c9c;
+
+}
+
+.menu ul{
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.menu-item a{
+    color: #fff;
+}
+
+/*главный заголовок и текст*/
+.main {
+    background-image: none; /*скрываем фон*/
+    padding: 30px 0 30px 0; /*уменьшаем отступы между блоками*/
+}
+
+.main-title{
+    font-size: 28px; /*уменьшить до 28px*/
+    margin-bottom: 20px;
+}
+
+.main-text {
+    max-width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.burger{
+    display: flex;
+}
+
+.button{
+    width: 100%; /* кнопка во всю ширину*/
+    height: 50px;
+    font-size: 14px;
+}
+
+/* карточки автомобилей*/
+
+.car {
+    padding: 50px 0; /*уменьшаем отступы между блоками*/
+}
+
+.car-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;/*рсасстояние между карточками*/
+}
+
+.car-item {
+    max-width: 100%;/* карточка во всю ширину*/
+}
+
+.car-item-image img {
+    width: 100%;/* изоброжение адоптивно*/
+    height: auto;
+}
+
+.car-item-title {
+    font-size: 18px;
+
+    
+}
+.car-item-action .button {
+    width: 100%;
+}
+
+/* форма бронирования*/
+
+.sub-title {
+    font-size: 28px; /*уменьшить до 28px*/
+    line-height: 1;
+}
+
+.price-form{
+    max-width: 100%;
+}
+
+.price-input {
+    width: 100%;
+}
+
+.price-img {
+    display: none; /*скрываем изображение на мобильной версии*/
+}
+
+/* подвал */
+.footer .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+@media (max-width:768px) {
+    
+    /*общий контейнер*/
+    .container {
+        padding: 0 50px;/*увеличить отступы для безопасности*/
+    }
+    
+    /* шапка */
+    
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+    }
+    
+    .menu{
+        margin-left: 150px;
+    }
+    
+    /*главный заголовок и текст*/
+    .main {
+        background-image: none; /*скрываем фон*/
+        padding: 30px 0 30px 0; /*уменьшаем отступы между блоками*/
+    }
+    
+    .main-title{
+        font-size: 28px; /*уменьшить до 28px*/
+        margin-bottom: 20px;
+    }
+    
+    .main-text {
+        max-width: 100%;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .button{
+        width: 100%; /* кнопка во всю ширину*/
+        height: 50px;
+        font-size: 14px;
+    }
+    
+    /* карточки автомобилей*/
+    
+    .car {
+        padding: 50px 0; /*уменьшаем отступы между блоками*/
+    }
+    
+    .car-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;/*рсасстояние между карточками*/
+    }
+    
+    .car-item {
+        max-width: 100%;/* карточка во всю ширину*/
+    }
+    
+    .car-item-image img {
+        width: 100%;/* изоброжение адоптивно*/
+        height: auto;
+    }
+    
+    .car-item-title {
+        font-size: 18px;
+    
+        
+    }
+    .car-item-action .button {
+        width: 100%;
+    }
+    
+    /* форма бронирования*/
+    
+    .sub-title {
+        font-size: 28px; /*уменьшить до 28px*/
+        line-height: 1;
+    }
+    
+    .price-form{
+        max-width: 100%;
+    }
+    
+    .price-input {
+        width: 100%;
+    }
+    
+    .price-img {
+        display: none; /*скрываем изображение на мобильной версии*/
+    }
+    
+    /* подвал */
+    .footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    }
+
+
+@media(max-width: 992px){
+    .container{
+        padding: 0, 20px;
+        
+    }    
+    
+    .car-item {
+        max-width: 100%;/* карточка во всю ширину*/
+    }
+    
+    .car-item-image img {
+        width: 100%;/* изоброжение адоптивно*/
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .container {
+        padding: 0 20px;/*увеличить отступы для безопасности*/
+    }
+
+
+    .main {
+        background-image: none; /*скрываем фон*/
+        padding: 30px 0 30px 0; /*уменьшаем отступы между блоками*/
+    }
+
+    .footer .container{
+        justify-content: space-evenly;
+    }
+
+
+}
