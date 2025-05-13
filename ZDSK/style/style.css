@@ -642,6 +642,8 @@ letter-spacing: 0%;
 
 }
 
+
+
 .btn-container{
     margin-top: 24px;
     display: flex;
@@ -995,9 +997,9 @@ letter-spacing: 0%;
     }
 
     .card-elem-alt{
-        display: block;
+        display: none;
     }
-    
+
     .card-items{
         border: none;
         display: grid;
@@ -1265,7 +1267,11 @@ letter-spacing: 0%;
     .card-elem-alt{
         display: block;
     }
-    
+ 
+    .card-elem-alt-alt{
+        display: block !important;
+    }
+
     .card-items{
         border: none;
         display: grid;
