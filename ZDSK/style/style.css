@@ -459,11 +459,19 @@ main h2{
     justify-content: center;
 }
 
+.advantages-items-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1281px;
+}
+
 .advantages-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 1281px;
+
+    width: 100%;
 }
 
 .advantages-items img{
@@ -866,6 +874,10 @@ letter-spacing: 0%;
         display: none;
     }
 
+    .header .main-header {
+        display: flex !important;
+    }
+
     .header .logo img{
         width: 37px;
         height: 37px;
@@ -1036,12 +1048,7 @@ letter-spacing: 0%;
         margin-left: 16px;
     }
 
-    .catalog-elem{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
+  
     .catalog-items{
         width: 144px;
     }
@@ -1070,6 +1077,8 @@ letter-spacing: 0%;
     }
 
 
+
+
     /* !advantages */
 
     .advantages h2{
@@ -1077,7 +1086,6 @@ letter-spacing: 0%;
     }
 
     .advantages-items{
-        display: grid;
         justify-content: center;
     }
 
@@ -1203,6 +1211,211 @@ letter-spacing: 0%;
     }
 }
 
+@media (max-width: 992px) {
+
+    .section{
+        width: 100%;
+    }
+
+    .btn-more{
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .header {
+        background-color: #051126;
+        padding: 0 20px;
+    }
+
+    .header .addres ul{
+        display: block;
+    }
+
+    .contact{
+        gap: 20px;
+    }
+
+    .header .main-header {
+        gap: 10px;
+        display: grid;
+    }
+    .advantages h2{
+        text-align: center;
+       
+    }
+    .advantages-items{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .advantages-items-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards{
+        width: 100%;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+    .card-elem-alt{
+        display: block;
+    }
+    
+    .card-items{
+        border: none;
+        display: grid;
+        justify-content: center;
+            
+    }
+
+    .card-item{
+        display: grid;
+    }
+
+    .card-text{
+        padding: 24px;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .card-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .form{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .form .data input{
+        width: 100%;
+    }
+
+    .form textarea{
+        width: 100%;
+    }
+
+
+    
+
+
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .header .banner {
+        gap: 40px;
+    }
+
+    .catalog-elem{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .catalog-item{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .news-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+    
+
+    .footer-nav {
+        gap: 40px;
+        width: 100%;
+    }
+
+    .footer-items {
+        gap: 40px;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    
+
+    .aferta{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .footer-watermark-container{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .company-text{
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header .nav-list{
+        display: none;
+    }
+
+    .header .nav-burger-list{
+        display: flex;
+    }
+
+    .header .main-header{
+        display: flex;
+    }
+
+    .header .nav-burger-list img{
+        width: 30px;
+    }
+
+    .banner-text h2{
+        font-size: 25px !important;
+    }
+
+    .banner-text p{
+        font-size: 16px !important;
+    }
+
+    
+
+    .banner-text .banner-buttons{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .banner-text .banner-buttons .btn-banner{
+        width: 100%;
+    }
+
+    .footer .nav-container{
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-nav ul{
+        flex-wrap: wrap;
+    }
+
+
+    
+}
 
 /* TODO АНИМАЦИИ */
 
@@ -1222,6 +1435,7 @@ letter-spacing: 0%;
 
 .banner .btn-banner-alt:active{
     background-color: #FF7A00;
+    border: 1px solid #FF7A00;
     color: #FFFFFF;
     border: none;
 }
@@ -1334,7 +1548,7 @@ letter-spacing: 0%;
 /* Настройки бургера */
 
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .mobile-nav {
         display: block;
     }
@@ -1344,4 +1558,3 @@ letter-spacing: 0%;
         transition: transform 0.3s ease;
     }
 }
-
