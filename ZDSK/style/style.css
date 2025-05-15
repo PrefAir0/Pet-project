@@ -1247,8 +1247,10 @@ letter-spacing: 0%;
        
     }
     .advantages-items{
+        display: grid;
         flex-wrap: wrap;
         width: 100%;
+        
     }
 
     .advantages-items-container{
@@ -1476,15 +1478,18 @@ letter-spacing: 0%;
 /*! Каталог */
 
 .catalog-items:hover .catalog-items-btn{
+    transition: background-color 0.2s ease 0.2s;
     background-color: #F55800;
     color: #FFFFFF;
 }
 
 .catalog-items:hover .catalog-items-price{
+    transition: color 0.2s ease 0.2s;
     color: white;
 }
 
 .catalog-items:hover{
+    transition: background-color 0.2s ease 0.2s;
     background-color: #FF7A00;
 }
 
