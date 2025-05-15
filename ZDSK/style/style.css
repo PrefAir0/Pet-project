@@ -303,6 +303,7 @@ main h2{
     display: grid;
     align-content: center;
     align-items: center;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .card-items{
@@ -363,6 +364,7 @@ main h2{
 
 
 .catalog-items-price{
+    transition: color 0.1s ease-in-out;
     color: #FF7A00;
     margin-top: 16px;
     font-size: 20px;
@@ -385,6 +387,7 @@ main h2{
 }
 
 .btn-more{
+    transition: background-color 0.2s ease-in-out;
     padding-top: 14px;
     padding-bottom: 14px;
     margin-top: 32px;
@@ -1453,11 +1456,6 @@ letter-spacing: 0%;
     border: 1px solid #FF7A00;
 }
 
-.catalog .btn:hover{
-    color: #FF7A00;
-    background: none;
-}
-
 
 /** Преимущества */
 
@@ -1484,12 +1482,11 @@ letter-spacing: 0%;
 }
 
 .catalog-items:hover .catalog-items-price{
-    transition: color 0.2s ease 0.2s;
     color: white;
 }
 
 .catalog-items:hover{
-    transition: background-color 0.2s ease 0.2s;
+    
     background-color: #FF7A00;
 }
 
